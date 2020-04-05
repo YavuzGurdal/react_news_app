@@ -2,37 +2,44 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .cardbox {
+  border-radius: 25px !important;
+} */
+
+.iconn {
+  color: rgb(47, 161, 255);
+  width: 1.5em;
+  height: 1.5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cardbox:hover {
+  border: 1px solid rgb(47, 161, 255);
+  /* box-shadow: currentColor; */
+  opacity: 0.7;
+  /* border-radius: 12px 12px 0px 0px; */
+
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cardTitle {
+  overflow: hidden;
+  /* line-height: 22px; */
+  line-height: 1.2;
+  display: -webkit-box;
+  width: 100%;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
+  /* height: 140px; */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.cardText {
+  overflow: hidden;
+  line-height: 1.5;
+  display: -webkit-box;
+  width: 100%;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  -webkit-box-orient: vertical;
+  /* height: 140px; */
+} 
